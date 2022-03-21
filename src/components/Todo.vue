@@ -16,6 +16,7 @@ defineProps<{ todo: Todo }>();
 
 <style>
 .todo {
+  width: 100%;
   padding: 0.5rem 1rem;
   background: white;
   display: flex;

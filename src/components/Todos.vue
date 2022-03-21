@@ -14,7 +14,9 @@ const { todos } = useTodos();
   </div>
   <TodoAdd />
   <div class="todos">
-    <Todo v-for="todo in todos" :todo="todo" :key="todo.id" />
+    <transition-group name="slide">
+      <Todo v-for="todo in todos" :todo="todo" :key="todo.id" />
+    </transition-group>
   </div>
 </template>
 
@@ -34,5 +36,21 @@ const { todos } = useTodos();
   gap: 0.5rem;
   margin: 2rem auto;
   max-width: 452px;
+}
+
+.slide-move,
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.5s ease, opacity 0.5s ease, position 0.5s ease;
+}
+
+.slide-leave-active {
+  position: absolute;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
 }
 </style>
