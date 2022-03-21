@@ -38,7 +38,7 @@ const { todos } = useTodos();
 .slide-move,
 .slide-enter-active,
 .slide-leave-active {
-  transition: all 0.5s;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .slide-leave-active {

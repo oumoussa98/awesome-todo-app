@@ -1,59 +1,61 @@
-# todo-app
+<p align='center'>
+  
+</p>
 
-This template should help get you started developing with Vue 3 in Vite.
+<p align='center'>
+  <a href="https://vuejs-todos.netlify.app/">Todo App</a>
+</p>
 
-## Recommended IDE Setup
+<br>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+## Technologies used
 
-## Type Support for `.vue` Imports in TS
+- 🦾 TypeScript
+- ⚡️ [Vue 3](https://github.com/vuejs/core) - An approachable, performant and versatile framework 
+- ⚡️ [Vite](https://github.com/vitejs/vite) - Next Generation Frontend Tooling
+- 🍍 [State Management via Pinia](https://pinia.esm.dev/)
+- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/)
+<br>
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Unit tests using vitest
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+<img src="./src//assets/unit-tests.png">
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Integration tests using cypress
 
-## Customize configuration
+<img src="./src//assets/cypress.png">
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+### Dev tools
 
-```sh
-npm install
-```
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
+- [Cypress](https://cypress.io/) - E2E testing
+- [VS Code Extensions](./.vscode/extensions.json)
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) - Vue 3 `<script setup>` IDE support
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-### Compile and Hot-Reload for Development
+## Try it
 
-```sh
-npm run dev
-```
+- #### [Live demo](https://vuejs-todos.netlify.app/)
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
-```
+- #### Or clone to local
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+  ```zsh
+  git clone git@github.com:oumoussa98/awesome-todo-app.git
 
-```sh
-npm run test:unit
-```
+  cd awesome-todo-app
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+  npm install
 
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+  npm run dev # start dev server
 
-### Lint with [ESLint](https://eslint.org/)
+  npm run test:unit # run unit tests
 
-```sh
-npm run lint
-```
+  npm run test:e2e # run integration tests
+
+  # checkout package.json to see all available scripts
+
+  ```
