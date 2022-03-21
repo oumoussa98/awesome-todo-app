@@ -23,6 +23,7 @@ defineProps<{ todo: Todo }>();
   align-items: center;
   gap: 0.5rem;
   border-radius: 5px;
+  margin-top: 0.5rem;
 }
 
 .todo .text {

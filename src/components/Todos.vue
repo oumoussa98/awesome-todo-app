@@ -30,10 +30,7 @@ const { todos } = useTodos();
 }
 
 .todos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  position: relative;
   margin: 2rem auto;
   max-width: 452px;
 }
@@ -41,7 +38,7 @@ const { todos } = useTodos();
 .slide-move,
 .slide-enter-active,
 .slide-leave-active {
-  transition: transform 0.5s ease, opacity 0.5s ease, position 0.5s ease;
+  transition: all 0.5s;
 }
 
 .slide-leave-active {
